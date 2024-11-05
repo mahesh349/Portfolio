@@ -1,0 +1,19 @@
+.card{
+    background-color: #212529;
+    border-radius: 15px;
+    box-shadow: -2px -2px 25px rgba(255, 255, 255, 0.2), 6px 6px 25px black;
+}
+
+
+.Skillcard{
+    background-color: #212529;
+    border-radius: 15px;
+    box-shadow: -2px -2px 25px rgba(255, 255, 255, 0.2), 6px 6px 25px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.Skillcard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.2);
+}
