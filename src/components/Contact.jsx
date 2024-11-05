@@ -6,7 +6,7 @@ import MaheshLogo2 from "../assets/MaheshLogo2.png";
 
 function Contact( {isActive} ) {
   return (
-    <div className={`rounded ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'}  ${isActive ? 'text-white' : 'text-gray-700'} py-12 px-6`}>
+    <div id="contact" className={`rounded ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'}  ${isActive ? 'text-white' : 'text-gray-700'} py-12 px-6`}>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Contact Details */}
