@@ -30,7 +30,7 @@ export const NAVIGATION_LINKS = [
 // Home Page Details
 export const Home_Page = {
     Name: 'Mahesh Pisharody',
-    info: 'Full Stack Developer with a flair for machine learning',
+    info: 'Full Stack Developer with a Flair for Machine Learning',
     photo: MaheshPisharody2,
     link1: "https://github.com/mahesh349",
     link2: "https://www.linkedin.com/in/mahesh-pisharody/",
@@ -166,22 +166,22 @@ export const Experience_Section = [
         CompanyName: 'KPMG India', //KPMG India
         TimeLine: 'Jul 2024 - Present',
         Description: {
-            Sentence1:'Designed and enhanced over 15 responsive, user-friendly web interfaces using React.js, ensuring that applications are visually engaging and deliver a seamless user experience across various devices and browsers.',
-            Sentence2: 'Administered the state of the application using Redux or Context API, optimizing data flow between components, and boosting performance by reducing unnecessary re-renders and memory usage.',
-            Sentence3: 'Connected frontend components with backend APIs to render dynamic content, managing data fetching, caching, and error handling for over 20 API endpoints, ensuring a smooth and dependable user experience.',
-            Sentence4: 'Executed features like pagination, infinite scrolling, and data filtering/sorting based on API responses, refining the user interface and experience.',
-            Sentence5: 'Developed unit tests for React components using Jest and React Testing Library, ensuring the application’s resilience and preventing bugs with new features.'
+            Sentence1: 'Developed responsive, cross-browser web applications using React.js, with a focus on enhanced user accessibility and performance.',
+            Sentence2: 'Built and optimized RESTful APIs, MySQL databases, and AWS integrations to ensure efficient data management, scalability, and cost-effectiveness.',
+            Sentence3: 'Implemented secure authentication mechanisms (OAuth, JWT) and actively participated in Agile processes to support collaborative, timely project delivery.',
+            Sentence4: 'Managed code quality using GitHub, modern front-end tools (Redux, Webpack), and rigorous testing (Jasmine, Mocha) to maintain high standards in functionality and reliability.',
+            Sentence5: 'Leveraged AWS services like RDS and Lambda to enhance application performance, scalability, and reduce operational costs.'
         }
     },
     {
         CompanyName: 'Trigent Software Inc', //Trigent Software Inc
         TimeLine: 'Jul 2024 - Present',
         Description: {
-            Sentence1:'Designed and enhanced over 15 responsive, user-friendly web interfaces using React.js, ensuring that applications are visually engaging and deliver a seamless user experience across various devices and browsers.',
-            Sentence2: 'Administered the state of the application using Redux or Context API, optimizing data flow between components, and boosting performance by reducing unnecessary re-renders and memory usage.',
-            Sentence3: 'Connected frontend components with backend APIs to render dynamic content, managing data fetching, caching, and error handling for over 20 API endpoints, ensuring a smooth and dependable user experience.',
-            Sentence4: 'Executed features like pagination, infinite scrolling, and data filtering/sorting based on API responses, refining the user interface and experience.',
-            Sentence5: 'Developed unit tests for React components using Jest and React Testing Library, ensuring the application’s resilience and preventing bugs with new features.'
+            Sentence1: 'Developed dynamic web applications with React.js, using reusable components, Redux for state management, and React Router for seamless navigation.',
+            Sentence2: 'Created RESTful APIs with Node.js and Express.js, supporting CRUD operations and handling 10+ API requests daily for enhanced application functionality.',
+            Sentence3: 'Managed data efficiently with MongoDB, integrating and securing third-party APIs with JWT to handle over 100+ user authentications.',
+            Sentence4: 'Actively collaborated in Agile workflows, conducting unit testing with Jest and Mocha to ensure code quality, optimize performance, and meet project deadlines.',
+            Sentence5: 'Enhanced application scalability and performance through efficient data handling, third-party API integrations, and rigorous testing.'
         }
     }
 ];
