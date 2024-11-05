@@ -23,7 +23,6 @@ export const NAVIGATION_LINKS = [
     { label: "Skills", href: "#skills" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
-    { label: "Achievements", href: "#achievements" },
     { label: "Contact", href: "#contact" }
 ];
 
@@ -35,7 +34,8 @@ export const Home_Page = {
     link1: "https://github.com/mahesh349",
     link2: "https://www.linkedin.com/in/mahesh-pisharody/",
     Github_logo: <FaGithub />,
-    Linkedin_logo: <FaLinkedin />
+    Linkedin_logo: <FaLinkedin />,
+    ResumeLink: "https://drive.google.com/file/d/1qQW664-jaFzRdaQe9sHfEJtbW4efgyUb/view?usp=drive_link",
 };
 
 // About Me Details
@@ -192,30 +192,36 @@ export const Project_Sections = [
         Name: 'InsightBlog',
         Image: InsightBlog,
         Link: 'https://github.com/mahesh349/InsightBlog.git',
+        About: "Built a user-centric blogging platform using JavaScript, MongoDB, Express.js, Node.js, and React.js, allowing users to create accounts, manage posts with articles, images, and videos. Integrated machine learning for content recommendations, comment sentiment analysis, spam detection, and article summarization. Secured platform with JWT authentication and bcrypt for safe user login and data protection."
     },
     {
         Name: 'LifeGuardAI',
         Image: HealthCareAI,
-        Link: 'https://github.com/mahesh349/LifeGuardAI'
+        Link: 'https://github.com/mahesh349/LifeGuardAI',
+        About: "Designed and implemented a machine learning-driven healthcare analytics framework in Python, achieving 80% accuracy in heart attack risk prediction. Leveraged Flask for API deployment and integrated a user-friendly interface with React and Node.js, enabling real-time data management and personalized insights for over 10,000 users, significantly enhancing patient-provider interactions."
     },
     {
         Name: 'SuitStay',
         Image: SuitStay,
-        Link: 'https://github.com/mahesh349/SuitStay'
+        Link: 'https://github.com/mahesh349/SuitStay',
+        About: "Led a team of 4 to develop a hotel management system with Node.js, MongoDB, and Express.js, reducing processing time by 50% and enhancing efficiency. Integrated Firebase and Handlebars, boosting data retrieval by 40% and improving user navigation by 30%. Implemented bcrypt for password hashing and middleware for security, achieving a robust, breach-free system."
     },
     {
         Name: 'Quick Read',
         Image: QuickRead,
-        Link: 'https://github.com/mahesh349/QuickRead'
+        Link: 'https://github.com/mahesh349/QuickRead',
+        About: "Used Python’s Beautiful Soup and Requests to scrape and analyze data from techcrunch.com, increasing audience engagement by 20%. Improved text analysis accuracy by 25% and reduced processing time by 40% through advanced preprocessing techniques like tokenization and lemmatization. Evaluated TF-IDF, LSA, and Textrank algorithms, finding LSA improved F1 scores by 20% and BLEU coherence by 30%."
     },
     {
         Name: 'Diebetic Retinopathy Detection Using Deep Learning',
         Image: DiebeticRetinopathy,
-        Link: 'https://github.com/mahesh349/Diabetic-Retinopathy-Detection-With-AI'
+        Link: 'https://github.com/mahesh349/Diabetic-Retinopathy-Detection-With-AI',
+        About: "Developed a diabetic retinopathy detection application using deep learning with Inception v3, capable of classifying severity levels (No DR, Mild, Moderate, Severe, Proliferative) to aid in early diagnosis. Deployed on the web with Flask, the model provides robust and noise-compatible predictions, aiming to reduce blindness risk through early detection and accurate severity assessment."
     },
     {
         Name: 'Flight Delay Prediction',
         Image: FlightDelay,
-        Link: 'https://github.com/mahesh349/Flight-Delay-Prediction'
+        Link: 'https://github.com/mahesh349/Flight-Delay-Prediction',
+        About: "Developed a machine learning model to predict flight delays using Python and scikit-learn, analyzing historical flight data, weather conditions, and airline schedules. Implemented data preprocessing, feature selection, and model evaluation techniques, achieving an accuracy of 85%. Deployed the model using Flask, enabling real-time predictions and assisting airlines in proactive scheduling, reducing delays by 15%."
     }
 ];

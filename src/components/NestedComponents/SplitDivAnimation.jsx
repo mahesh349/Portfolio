@@ -11,8 +11,8 @@ const SplitNew = ({ isActive }) => {
                     ${isActive ? 'bg-linear-black text-white' : 'bg-linear-white text-black'}
                     shadow-lg p-6 flex flex-col items-center justify-center text-center`}
       >
+        <h3 className="text-3xl mb-2">Frontend Development</h3>
         <img src={About.FrontImg} alt="Front End" className="h-48 w-auto lg:h-[20rem] object-cover mb-4" />
-        <h3 className="text-2xl mb-2">Frontend Developer</h3>
         <h2 className="text-3xl mb-4">Crafting Engaging User Experiences</h2>
         <p className="text-justify max-w-lg">
           As a Frontend Developer, I’m dedicated to creating visually compelling and responsive web interfaces that provide seamless user experiences.
@@ -27,8 +27,8 @@ const SplitNew = ({ isActive }) => {
                     ${isActive ? 'bg-linear-black text-white' : 'bg-linear-white text-black'}
                     shadow-lg p-6 flex flex-col items-center justify-center text-center`}
       >
+        <h3 className="text-3xl mb-2">Backend Development</h3>
         <img src={About.BackImg} alt="Back End" className="h-48 w-auto lg:h-[20rem] object-cover mb-4" />
-        <h3 className="text-2xl mb-2">Backend Developer</h3>
         <h2 className="text-3xl mb-4">Building Robust and Scalable Backends</h2>
         <p className="text-justify max-w-lg">
           In my role as a Backend Developer, I’m skilled in designing and implementing powerful server-side architectures that drive secure and efficient

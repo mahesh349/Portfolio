@@ -115,11 +115,11 @@ function SkillsList({ isActive }) {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Programming Languages Section */}
-        <div className="font-thin p-6 bg-[#212529] rounded-[15px] shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]">
+        <div className={`font-thin p-6 rounded-[15px] ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} `}>
           <h1 className="text-[#f10350] pb-4 text-2xl font-semibold mb-4">Programming Languages</h1>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Programming_Skills.map((items, itemIndex) => (
-              <li key={itemIndex} className="text-white flex flex-col items-center HoverChange">
+              <li key={itemIndex} className={`${isActive ? 'text-white' : 'text-black'}  flex flex-col items-center HoverChange`}>
                 <div className="text-4xl mb-2">{items.icon}</div>
                 <span className="text-lg">{items.name}</span>
               </li>
@@ -128,11 +128,11 @@ function SkillsList({ isActive }) {
         </div>
 
         {/* Front End Skills Section */}
-        <div className="font-thin p-6 bg-[#212529] rounded-[15px] shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]">
+        <div className={`font-thin p-6 rounded-[15px] ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} `}>
           <h1 className="text-[#f10350] pb-2 text-2xl font-semibold mb-4">Front End Skills</h1>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Front_End_Skills.map((items, itemIndex) => (
-              <li key={itemIndex} className="text-white flex flex-col items-center HoverChange">
+              <li key={itemIndex} className={`${isActive ? 'text-white' : 'text-black'}  flex flex-col items-center HoverChange`}>
                 <div className="text-4xl mb-2">{items.icon}</div>
                 <span className="text-lg">{items.name}</span>
               </li>
@@ -141,11 +141,11 @@ function SkillsList({ isActive }) {
         </div>
 
         {/* Back End Skills Section */}
-        <div className="font-thin p-6 bg-[#212529] rounded-[15px] shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]">
+        <div className={`font-thin p-6 rounded-[15px] ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} `}>
           <h1 className="text-[#f10350] pb-2 text-2xl font-semibold mb-4">Back End Skills</h1>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Back_End_Skills.map((items, itemIndex) => (
-              <li key={itemIndex} className="text-white flex flex-col items-center HoverChange">
+              <li key={itemIndex} className={`${isActive ? 'text-white' : 'text-black'}  flex flex-col items-center HoverChange`}>
                 <div className="text-4xl mb-2">{items.icon}</div>
                 <span className="text-lg">{items.name}</span>
               </li>
@@ -154,11 +154,11 @@ function SkillsList({ isActive }) {
         </div>
 
         {/* DevOps Skills Section */}
-        <div className="font-thin p-6 bg-[#212529] rounded-[15px] shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]">
+        <div className={`font-thin p-6 rounded-[15px] ${isActive ? 'bg-linear-black' : 'bg-linear-white'} ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} `}>
           <h1 className="text-[#f10350] pb-2 text-2xl font-semibold mb-4">Dev Ops Skills</h1>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Devops_Skills.map((items, itemIndex) => (
-              <li key={itemIndex} className="text-white flex flex-col items-center HoverChange">
+              <li key={itemIndex} className={`${isActive ? 'text-white' : 'text-black'}  flex flex-col items-center HoverChange`}>
                 <div className="text-4xl mb-2">{items.icon}</div>
                 <span className="text-lg">{items.name}</span>
               </li>

@@ -17,3 +17,7 @@
   color: #f10350;
   transform: scale(1.1);
 }
+
+.Border-Custom{
+  border: 1px solid #f10350;
+}
