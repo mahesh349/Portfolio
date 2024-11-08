@@ -191,37 +191,58 @@ export const Project_Sections = [
     {
         Name: 'InsightBlog',
         Image: InsightBlog,
-        Link: 'https://github.com/mahesh349/InsightBlog.git',
-        About: "Built a user-centric blogging platform using JavaScript, MongoDB, Express.js, Node.js, and React.js, allowing users to create accounts, manage posts with articles, images, and videos. Integrated machine learning for content recommendations, comment sentiment analysis, spam detection, and article summarization. Secured platform with JWT authentication and bcrypt for safe user login and data protection."
+        About: "Built a user-centric blogging platform using JavaScript, MongoDB, Express.js, Node.js, and React.js, allowing users to create accounts, manage posts with articles, images, and videos. Integrated machine learning for content recommendations, comment sentiment analysis, spam detection, and article summarization. Secured platform with JWT authentication and bcrypt for safe user login and data protection.",
+        Tech: ['React','Express.js','MongoDB','Firebase','Redux','Machine Learning Algorithms','Data Analysis','Flask','Python']
     },
     {
         Name: 'LifeGuardAI',
         Image: HealthCareAI,
-        Link: 'https://github.com/mahesh349/LifeGuardAI',
-        About: "Designed and implemented a machine learning-driven healthcare analytics framework in Python, achieving 80% accuracy in heart attack risk prediction. Leveraged Flask for API deployment and integrated a user-friendly interface with React and Node.js, enabling real-time data management and personalized insights for over 10,000 users, significantly enhancing patient-provider interactions."
+        About: "Designed and implemented a machine learning-driven healthcare analytics framework in Python, achieving 80% accuracy in heart attack risk prediction. Leveraged Flask for API deployment and integrated a user-friendly interface with React and Node.js, enabling real-time data management and personalized insights for over 10,000 users, significantly enhancing patient-provider interactions.",
+        Tech: ['React','Express.js','MongoDB','Firebase','Redux','Machine Learning Algortihms','Data Analysis','Flask','Python']
     },
     {
         Name: 'SuitStay',
         Image: SuitStay,
-        Link: 'https://github.com/mahesh349/SuitStay',
-        About: "Led a team of 4 to develop a hotel management system with Node.js, MongoDB, and Express.js, reducing processing time by 50% and enhancing efficiency. Integrated Firebase and Handlebars, boosting data retrieval by 40% and improving user navigation by 30%. Implemented bcrypt for password hashing and middleware for security, achieving a robust, breach-free system."
+        About: "Led a team of 4 to develop a hotel management system with Node.js, MongoDB, and Express.js, reducing processing time by 50% and enhancing efficiency. Integrated Firebase and Handlebars, boosting data retrieval by 40% and improving user navigation by 30%. Implemented bcrypt for password hashing and middleware for security, achieving a robust, breach-free system.",
+        Tech: ['Node.js','Express.js','MongoDB','Firebase','Redux','Handlebars','Password Hashing']
     },
     {
         Name: 'Quick Read',
         Image: QuickRead,
-        Link: 'https://github.com/mahesh349/QuickRead',
-        About: "Used Python’s Beautiful Soup and Requests to scrape and analyze data from techcrunch.com, increasing audience engagement by 20%. Improved text analysis accuracy by 25% and reduced processing time by 40% through advanced preprocessing techniques like tokenization and lemmatization. Evaluated TF-IDF, LSA, and Textrank algorithms, finding LSA improved F1 scores by 20% and BLEU coherence by 30%."
+        About: "Used Python’s Beautiful Soup and Requests to scrape and analyze data from techcrunch.com, increasing audience engagement by 20%. Improved text analysis accuracy by 25% and reduced processing time by 40% through advanced preprocessing techniques like tokenization and lemmatization. Evaluated TF-IDF, LSA, and Textrank algorithms, finding LSA improved F1 scores by 20% and BLEU coherence by 30%.",
+        Tech: ['React','Express.js','MongoDB','Natural Language Processing(NLP)','Machine Learning Algorithms','Redux']
     },
     {
         Name: 'Diebetic Retinopathy Detection Using Deep Learning',
         Image: DiebeticRetinopathy,
-        Link: 'https://github.com/mahesh349/Diabetic-Retinopathy-Detection-With-AI',
-        About: "Developed a diabetic retinopathy detection application using deep learning with Inception v3, capable of classifying severity levels (No DR, Mild, Moderate, Severe, Proliferative) to aid in early diagnosis. Deployed on the web with Flask, the model provides robust and noise-compatible predictions, aiming to reduce blindness risk through early detection and accurate severity assessment."
+        About: "Developed a diabetic retinopathy detection application using deep learning with Inception v3, capable of classifying severity levels (No DR, Mild, Moderate, Severe, Proliferative) to aid in early diagnosis. Deployed on the web with Flask, the model provides robust and noise-compatible predictions, aiming to reduce blindness risk through early detection and accurate severity assessment.",
+        techSkills: [
+            "Deep Learning Algorithms",
+            "Computer Vision",
+            "Image Classification",
+            "Python",
+            "TensorFlow or PyTorch",
+            "Evaluation Metrics",
+            "Flask",
+            "Web Deployment",
+            "Machine Learning Model Evaluation",
+            "Medical Image Analysis"
+        ]
     },
     {
         Name: 'Flight Delay Prediction',
         Image: FlightDelay,
-        Link: 'https://github.com/mahesh349/Flight-Delay-Prediction',
-        About: "Developed a machine learning model to predict flight delays using Python and scikit-learn, analyzing historical flight data, weather conditions, and airline schedules. Implemented data preprocessing, feature selection, and model evaluation techniques, achieving an accuracy of 85%. Deployed the model using Flask, enabling real-time predictions and assisting airlines in proactive scheduling, reducing delays by 15%."
+        About: "Developed a machine learning model to predict flight delays using Python and scikit-learn, analyzing historical flight data, weather conditions, and airline schedules. Implemented data preprocessing, feature selection, and model evaluation techniques, achieving an accuracy of 85%. Deployed the model using Flask, enabling real-time predictions and assisting airlines in proactive scheduling, reducing delays by 15%.",
+        techSkills: [
+            "Machine Learning",
+            "Python",
+            "scikit-learn",
+            "Feature Selection",
+            "Model Evaluation",
+            "Data Analysis",
+            "Historical Data Analysis",
+            "Weather Data Analysis"
+        ]
+          
     }
 ];
