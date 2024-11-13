@@ -164,7 +164,7 @@ export const Experience_Section = [
     },
     {
         CompanyName: 'KPMG India', //KPMG India
-        TimeLine: 'Jul 2024 - Present',
+        TimeLine: 'Aug 2021 - Jul 2022',
         Description: {
             Sentence1: 'Developed responsive, cross-browser web applications using React.js, with a focus on enhanced user accessibility and performance.',
             Sentence2: 'Built and optimized RESTful APIs, MySQL databases, and AWS integrations to ensure efficient data management, scalability, and cost-effectiveness.',
@@ -175,7 +175,7 @@ export const Experience_Section = [
     },
     {
         CompanyName: 'Trigent Software Inc', //Trigent Software Inc
-        TimeLine: 'Jul 2024 - Present',
+        TimeLine: 'Jul 2020 - Jun 2021',
         Description: {
             Sentence1: 'Developed dynamic web applications with React.js, using reusable components, Redux for state management, and React Router for seamless navigation.',
             Sentence2: 'Created RESTful APIs with Node.js and Express.js, supporting CRUD operations and handling 10+ API requests daily for enhanced application functionality.',
