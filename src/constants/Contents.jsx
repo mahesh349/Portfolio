@@ -28,7 +28,7 @@ export const NAVIGATION_LINKS = [
 
 // Home Page Details
 export const Home_Page = {
-    Name: 'Mahesh Prasad Pisharody',
+    Name: 'Mahesh Pisharody',
     info: 'Full Stack Developer with a Flair for Machine Learning',
     photo: MaheshPisharody2,
     link1: "https://github.com/mahesh349",
