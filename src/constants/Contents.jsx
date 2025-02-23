@@ -43,7 +43,8 @@ export const Home_Page = {
 // About Me Details
 export const About = {
     text0: "About Me",
-    text1: "I Create Dynamic, Responsive Websites That Blend Creativity With Efficiency",
+    // text1: "I Create Dynamic, Responsive Websites That Blend Creativity With Efficiency",
+    text1: "I’m a full-stack developer passionate about building intuitive and high-performing web applications.",
     text2: "Hello! I'm Mahesh Pisharody, a full-stack developer with a flair for graphic design. I thrive on crafting web experiences that are not only visually stunning but also highly functional and user-friendly. My passion for detail ensures that every project is polished and professional. Beyond coding, I'm an avid explorer of new cultures and cuisines. My curiosity drives me to stay on the cutting edge of technology and design trends, bringing innovative and practical solutions to every challenge. Whether I'm developing a sleek website or diving into the latest tech, I am dedicated to delivering excellence in every project.",
     BackImg: BackEnd,
     FrontImg: FrontEnd,
