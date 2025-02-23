@@ -1,10 +1,11 @@
 // React Icons
-import { SiRedux,SiSpring,SiSpringboot,SiDjango,SiMysql,SiMongodb,SiExpress } from "react-icons/si";
-import { FaFigma,FaAws,FaGitAlt,FaGithub,FaDocker,FaJava,FaAngular,FaReact,FaNodeJs,FaLinkedin,FaPython } from "react-icons/fa"
+import { SiRedux,SiSpring,SiSpringboot,SiMysql,SiMongodb,SiExpress,SiJest,SiGraphql,SiFlask,SiPostgresql } from "react-icons/si";
+import { FaAws,FaGitAlt,FaGithub,FaDocker,FaJava,FaReact,FaNodeJs,FaLinkedin,FaPython } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineKubernetes } from "react-icons/ai";
-import { DiRedis, DiJqueryLogo } from "react-icons/di";
+import { DiRedis, DiJqueryLogo,DiJenkins } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { PiFileSql } from "react-icons/pi";
 
 // React Images
 import MaheshPisharody2 from "../assets/MaheshPisharody2.jpg";
@@ -35,7 +36,8 @@ export const Home_Page = {
     link2: "https://www.linkedin.com/in/mahesh-pisharody/",
     Github_logo: <FaGithub />,
     Linkedin_logo: <FaLinkedin />,
-    ResumeLink: "https://drive.google.com/file/d/1qQW664-jaFzRdaQe9sHfEJtbW4efgyUb/view?usp=drive_link",
+    // ResumeLink: "https://drive.google.com/file/d/1qQW664-jaFzRdaQe9sHfEJtbW4efgyUb/view?usp=drive_link",
+    ResumeLink: "https://drive.google.com/file/d/1LZujQooe299kGoh8lvWkd4qg8PkeCuuI/view?usp=drive_link",
 };
 
 // About Me Details
@@ -50,16 +52,20 @@ export const About = {
 // Skills Section
 export const Programming_Skills = [
     {
-        icon: <FaPython />,
-        name: 'Python'
-    },
-    {
         icon: <FaJava />,
         name: 'Java'
     },
     {
         icon: <IoLogoJavascript />,
         name: 'JavaScript'
+    },
+    {
+        icon: <FaPython />,
+        name: 'Python'
+    },
+    {
+        icon: <PiFileSql />,
+        name: 'SQL'
     }
 ];
 
@@ -69,35 +75,47 @@ export const Front_End_Skills = [
         name: 'React'
     },
     {
-        icon: <FaAngular />,
-        name: 'Angular'
+        icon: <SiRedux />,
+        name: 'Redux'
     },
     {
-        icon: <RiTailwindCssFill />,
-        name: 'Tailwind CSS'
+        icon: <SiJest />,
+        name: 'Jest'
+    },
+    {
+        icon: <SiGraphql />,
+        name: 'GraphQL'
     },
     {
         icon: <DiJqueryLogo />,
         name: 'JQuery'
     },
     {
-        icon: <SiRedux />,
-        name: 'Redux'
-    },
-    {
-        icon: <FaFigma />,
-        name: 'Figma'
+        icon: <RiTailwindCssFill />,
+        name: 'Tailwind CSS'
     }
 ];
 
 export const Back_End_Skills =[
     {
+        icon: <FaNodeJs />,
+        name: 'Node.js'
+    },
+    {
         icon: <SiExpress />,
         name: 'Express'
     },
     {
-        icon: <FaNodeJs />,
-        name: 'Node.js'
+        icon: <SiSpringboot />,
+        name: 'Springboot'
+    },
+    {
+        icon: <SiSpring />,
+        name: 'Spring Framework'
+    },
+    {
+        icon: <SiFlask />,
+        name: 'Flask'
     },
     {
         icon: <SiMongodb />,
@@ -108,16 +126,8 @@ export const Back_End_Skills =[
         name: 'MySQL'
     },
     {
-        icon: <SiDjango />,
-        name: 'Django'
-    },
-    {
-        icon: <SiSpring />,
-        name: 'Spring Framework'
-    },
-    {
-        icon: <SiSpringboot />,
-        name: 'Springboot'
+        icon: <SiPostgresql />,
+        name: 'PostgreSQL'
     }
 ];
 
@@ -142,10 +152,13 @@ export const Devops_Skills = [
         icon: <AiOutlineKubernetes />,
         name: 'Kubernetes'
     },
-
     {
         icon: <DiRedis />,
         name: 'Redis'
+    },
+    {
+        icon: <DiJenkins />,
+        name: 'Jenkins'
     }
 ];
 
@@ -155,33 +168,39 @@ export const Experience_Section = [
         CompanyName: 'McKinsey & Company', //'McKinsey & Company'
         TimeLine: 'Jul 2024 - Present',
         Description: {
-            Sentence1:'Designed and enhanced over 15 responsive, user-friendly web interfaces using React.js, ensuring that applications are visually engaging and deliver a seamless user experience across various devices and browsers.',
-            Sentence2: 'Administered the state of the application using Redux or Context API, optimizing data flow between components, and boosting performance by reducing unnecessary re-renders and memory usage.',
-            Sentence3: 'Connected frontend components with backend APIs to render dynamic content, managing data fetching, caching, and error handling for over 20 API endpoints, ensuring a smooth and dependable user experience.',
-            Sentence4: 'Executed features like pagination, infinite scrolling, and data filtering/sorting based on API responses, refining the user interface and experience.',
-            Sentence5: 'Developed unit tests for React components using Jest and React Testing Library, ensuring the application’s resilience and preventing bugs with new features.'
+            Sentence1: 'Designed over 15 interactive web interfaces using React.js, ensuring smooth accessibility and engagement across multiple devices and screen sizes.',
+            Sentence2: 'Enhanced state management with Redux, eliminating redundant renders and maximizing application efficiency for better resource allocation.',
+            Sentence3: 'Developed seamless integration between frontend components and backend APIs, dynamically displaying data from 20+ endpoints while implementing caching mechanisms.',
+            Sentence4: 'Introduced pagination, infinite scrolling, and real-time filtering, enriching user interactions and creating a more intuitive interface.',
+            Sentence5: 'Strengthened code reliability by crafting comprehensive unit tests with Jest and React Testing Library, mitigating regression issues.',
+            Sentence6: 'Minimized API latency by 30%, refining data-fetching approaches and optimizing state transitions for quicker responses.',
+            Sentence7: 'Elevated content rendering strategies, contributing to a 20% boost in user engagement across enterprise platforms.'
         }
     },
     {
         CompanyName: 'KPMG India', //KPMG India
         TimeLine: 'Aug 2021 - Jul 2022',
         Description: {
-            Sentence1: 'Developed responsive, cross-browser web applications using React.js, with a focus on enhanced user accessibility and performance.',
-            Sentence2: 'Built and optimized RESTful APIs, MySQL databases, and AWS integrations to ensure efficient data management, scalability, and cost-effectiveness.',
-            Sentence3: 'Implemented secure authentication mechanisms (OAuth, JWT) and actively participated in Agile processes to support collaborative, timely project delivery.',
-            Sentence4: 'Managed code quality using GitHub, modern front-end tools (Redux, Webpack), and rigorous testing (Jasmine, Mocha) to maintain high standards in functionality and reliability.',
-            Sentence5: 'Leveraged AWS services like RDS and Lambda to enhance application performance, scalability, and reduce operational costs.'
+            Sentence1: 'Developed financial applications using React.js and JavaScript, ensuring compliance with industry standards and seamless compatibility across browsers.',
+            Sentence2: 'Built RESTful APIs using Java & Spring Framework, optimizing backend communication pipelines and decreasing data retrieval times by 30% through structured queries.',
+            Sentence3: 'Architected secure MySQL databases, incorporating AWS RDS for managed storage solutions and AWS Lambda for cost-efficient serverless execution.',
+            Sentence4: 'Applied advanced authentication protocols with OAuth and JWT, reinforcing access control and preventing unauthorized data exposure.',
+            Sentence5: 'Conducted rigorous unit and integration testing with Jasmine and Mocha, leveraging Webpack and GitHub for structured code management.',
+            Sentence6: 'Revamped database queries to enhance transaction speed, increasing backend efficiency by 25% for large-scale data processing.',
+            Sentence7: 'Streamlined architectural design, boosting reliability and ensuring adherence to financial security policies.'
         }
     },
     {
         CompanyName: 'Trigent Software Inc', //Trigent Software Inc
         TimeLine: 'Jul 2020 - Jun 2021',
         Description: {
-            Sentence1: 'Developed dynamic web applications with React.js, using reusable components, Redux for state management, and React Router for seamless navigation.',
-            Sentence2: 'Created RESTful APIs with Node.js and Express.js, supporting CRUD operations and handling 10+ API requests daily for enhanced application functionality.',
-            Sentence3: 'Managed data efficiently with MongoDB, integrating and securing third-party APIs with JWT to handle over 100+ user authentications.',
-            Sentence4: 'Actively collaborated in Agile workflows, conducting unit testing with Jest and Mocha to ensure code quality, optimize performance, and meet project deadlines.',
-            Sentence5: 'Enhanced application scalability and performance through efficient data handling, third-party API integrations, and rigorous testing.'
+            Sentence1: 'Created modular, scalable web applications using React.js, developing reusable UI components and ensuring effortless navigation with React Router.',
+            Sentence2: 'Engineered RESTful APIs using Node.js and Express.js, handling asynchronous requests efficiently for 10,000+ monthly transactions.',
+            Sentence3: 'Optimized MongoDB schema structures, streamlining data retrieval processes and ensuring smooth interactions within the system.',
+            Sentence4: 'Secured external API integrations, successfully incorporating 5+ third-party services and authenticating over 100,000+ users via JWT.',
+            Sentence5: 'Participated in Agile development workflows, engaging in iterative sprints and adapting to evolving feature requirements.',
+            Sentence6: 'Strengthened application stability through meticulous unit testing using Jest and Mocha, proactively addressing potential bottlenecks.',
+            Sentence7: 'Enhanced user experience by refining interface aesthetics and accelerating API responses, increasing user retention by 30%.'
         }
     }
 ];

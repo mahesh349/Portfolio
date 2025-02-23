@@ -101,8 +101,7 @@ function Landing() {
               href={Home_Page.ResumeLink} // Replace with the actual link to your resume
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block bg-[#f10350] text-white font-semibold py-2 px-6 rounded-lg transition duration-300 hover:bg-[#d10248]"
-            >
+              className="inline-block bg-[#f10350] text-white font-semibold py-2 px-6 rounded-lg transition duration-300 hover:bg-[#d10248]">
               Download Resume
             </a>
           </div>

@@ -15,9 +15,11 @@ const SplitNew = ({ isActive }) => {
         <img src={About.FrontImg} alt="Front End" className="h-48 w-auto lg:h-[20rem] object-cover mb-4" />
         <h2 className="text-3xl mb-4">Crafting Engaging User Experiences</h2>
         <p className="text-justify max-w-lg">
-          As a Frontend Developer, I’m dedicated to creating visually compelling and responsive web interfaces that provide seamless user experiences.
-          Leveraging technologies like React, HTML, CSS, and Redux, I focus on developing intuitive UI components and ensuring cross-browser compatibility.
-          My projects reflect a commitment to quality and performance, using techniques like state management, unit testing, and dynamic data rendering to...
+          I’m a full-stack developer passionate about building intuitive and high-performing web applications. 
+          On the frontend, I enjoy crafting clean, responsive, and dynamic user interfaces using React.js, Redux, 
+          and modern JavaScript frameworks. I focus on creating smooth user experiences with optimized state management, 
+          interactive elements, and seamless API integrations. From designing reusable UI components to implementing animations 
+          and accessibility best practices, I love bringing ideas to life with code.
         </p>
       </div>
 
@@ -31,9 +33,11 @@ const SplitNew = ({ isActive }) => {
         <img src={About.BackImg} alt="Back End" className="h-48 w-auto lg:h-[20rem] object-cover mb-4" />
         <h2 className="text-3xl mb-4">Building Robust and Scalable Backends</h2>
         <p className="text-justify max-w-lg">
-          In my role as a Backend Developer, I’m skilled in designing and implementing powerful server-side architectures that drive secure and efficient
-          data processing. Utilizing tools like Node.js, Express.js, MySQL, and AWS, I work to create scalable, well-structured APIs and manage databases
-          with a focus on speed and security. My backend work supports seamless frontend integration and ensures that applications can grow with the demands...
+          On the backend, I specialize in building scalable and secure APIs using Node.js, 
+          Express.js, Java, and Spring Boot. I enjoy working with databases like MongoDB, MySQL, 
+          and PostgreSQL, optimizing queries, and ensuring efficient data flow. Whether it&apos;s 
+          handling authentication, integrating third-party services, or deploying cloud-based 
+          solutions with AWS and Docker, I focus on writing clean, maintainable, and high-performance backend logic.
         </p>
       </div>
     </div>
