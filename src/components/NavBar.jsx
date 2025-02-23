@@ -174,7 +174,7 @@ function NavBar({ toggleStyle, isActive }) {
                                 <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
                                 <div className={`dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition ${isActive ? 'translate-x-6' : ''}`}></div>
                             </div>
-                            <span className={`ml-3 text-sm ${isActive ? 'text-white' : 'text-gray-700'}`}>Toggle Background</span>
+                            <span className={`ml-3 text-sm ${isActive ? 'text-white' : 'text-gray-700'}`}>Switch Theme</span>
                         </label>
                     </div>
                 </div>
