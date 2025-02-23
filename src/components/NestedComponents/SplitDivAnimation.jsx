@@ -14,8 +14,7 @@ const SplitNew = ({ isActive }) => {
         <h3 className="text-3xl mb-2">Frontend Development</h3>
         <img src={About.FrontImg} alt="Front End" className="h-48 w-auto lg:h-[20rem] object-cover mb-4" />
         <h2 className="text-3xl mb-4">Crafting Engaging User Experiences</h2>
-        <p className="text-justify max-w-lg">
-          I’m a full-stack developer passionate about building intuitive and high-performing web applications. 
+        <p className="text-justify max-w-lg"> 
           On the frontend, I enjoy crafting clean, responsive, and dynamic user interfaces using React.js, Redux, 
           and modern JavaScript frameworks. I focus on creating smooth user experiences with optimized state management, 
           interactive elements, and seamless API integrations. From designing reusable UI components to implementing animations 

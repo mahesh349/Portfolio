@@ -12,7 +12,7 @@ function AboutMe({ isActive }) {
                     rounded-[15px]`}>
         {About.text0}
       </h1>
-      <h1 className={`font-thin text-5xl mt-12 mb-12 ${isActive ? 'text-white' : 'text-black'}`}>
+      <h1 className={`font-thin text-4xl mt-12 mb-12 ${isActive ? 'text-white' : 'text-black'}`}>
         {About.text1}
       </h1>
       <SplitNew isActive={isActive}/>
