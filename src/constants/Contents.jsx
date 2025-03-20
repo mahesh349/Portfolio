@@ -37,7 +37,10 @@ export const Home_Page = {
     Github_logo: <FaGithub />,
     Linkedin_logo: <FaLinkedin />,
     // ResumeLink: "https://drive.google.com/file/d/1qQW664-jaFzRdaQe9sHfEJtbW4efgyUb/view?usp=drive_link",
-    ResumeLink: "https://drive.google.com/file/d/1LZujQooe299kGoh8lvWkd4qg8PkeCuuI/view?usp=drive_link",
+    // MERN STACK RESUME BELOW
+    // ResumeLink: "https://drive.google.com/file/d/1LZujQooe299kGoh8lvWkd4qg8PkeCuuI/view?usp=drive_link",
+    // 4 Yrs JAVA RESUME BELOW
+    ResumeLink: "https://drive.google.com/file/d/1ecO5nKiercvQz_snKVAA2rlwfOVttmAE/view?usp=sharing",
 };
 
 // About Me Details
@@ -202,6 +205,16 @@ export const Experience_Section = [
             Sentence5: 'Participated in Agile development workflows, engaging in iterative sprints and adapting to evolving feature requirements.',
             Sentence6: 'Strengthened application stability through meticulous unit testing using Jest and Mocha, proactively addressing potential bottlenecks.',
             Sentence7: 'Enhanced user experience by refining interface aesthetics and accelerating API responses, increasing user retention by 30%.'
+        }
+    },
+    // FOR GOLDMAN SACHS BELOW
+    {
+        CompanyName: 'MultiBrand Computers', //Multibrand Computers
+        TimeLine: 'Jan 2019 - Dec 2019',
+        Description: {
+            Sentence1: 'Develop a dynamic API system to process events, increasing operational efficiency by 30%. Designed and developed applications using Springboot, Hibernate, and SQL databases with minimal manual configuration.',
+            Sentence2: 'Worked on Distributed Systems which handled large transactions and helped maintain the overall application.',
+            Sentence3: 'Collaborated seamlessly with diverse teams, offering adept support and resolving incidents promptly, elevating operational efficiency by 30%, adhering to Agile methodology. Played a pivotal role in product support, ensuring smooth operations and enhancing organizational efficiency.',
         }
     }
 ];
