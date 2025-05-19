@@ -206,17 +206,17 @@ export const Experience_Section = [
             Sentence6: 'Strengthened application stability through meticulous unit testing using Jest and Mocha, proactively addressing potential bottlenecks.',
             Sentence7: 'Enhanced user experience by refining interface aesthetics and accelerating API responses, increasing user retention by 30%.'
         }
-    },
-    // FOR GOLDMAN SACHS BELOW
-    {
-        CompanyName: 'MultiBrand Computers', //Multibrand Computers
-        TimeLine: 'Jan 2019 - Dec 2019',
-        Description: {
-            Sentence1: 'Develop a dynamic API system to process events, increasing operational efficiency by 30%. Designed and developed applications using Springboot, Hibernate, and SQL databases with minimal manual configuration.',
-            Sentence2: 'Worked on Distributed Systems which handled large transactions and helped maintain the overall application.',
-            Sentence3: 'Collaborated seamlessly with diverse teams, offering adept support and resolving incidents promptly, elevating operational efficiency by 30%, adhering to Agile methodology. Played a pivotal role in product support, ensuring smooth operations and enhancing organizational efficiency.',
-        }
     }
+    // FOR GOLDMAN SACHS BELOW
+    // {
+    //     CompanyName: 'MultiBrand Computers', //Multibrand Computers
+    //     TimeLine: 'Jan 2019 - Dec 2019',
+    //     Description: {
+    //         Sentence1: 'Develop a dynamic API system to process events, increasing operational efficiency by 30%. Designed and developed applications using Springboot, Hibernate, and SQL databases with minimal manual configuration.',
+    //         Sentence2: 'Worked on Distributed Systems which handled large transactions and helped maintain the overall application.',
+    //         Sentence3: 'Collaborated seamlessly with diverse teams, offering adept support and resolving incidents promptly, elevating operational efficiency by 30%, adhering to Agile methodology. Played a pivotal role in product support, ensuring smooth operations and enhancing organizational efficiency.',
+    //     }
+    // }
 ];
 
 // Project Section
