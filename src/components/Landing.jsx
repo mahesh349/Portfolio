@@ -56,7 +56,7 @@ function Landing({ isActive }) {
               rel="noopener noreferrer"
               className="inline-block bg-[#f10350] text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 hover:bg-[#d10248]"
             >
-              Download Resume
+              View Resume
             </a>
             <a
               href="#contact"

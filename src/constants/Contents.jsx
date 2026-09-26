@@ -51,7 +51,7 @@ export const Home_Page = {
   link2: "https://www.linkedin.com/in/mahesh-pisharody/",
   Github_logo: <FaGithub />,
   Linkedin_logo: <FaLinkedin />,
-  ResumeLink: "/resume/Mahesh_Pisharody_Resume.docx",
+  ResumeLink: "https://drive.google.com/file/d/1v_XNGtMQNkhZ05UgWtyU4lzJrTBavdzd/view?usp=sharing",
 };
 
 // Contact Details
