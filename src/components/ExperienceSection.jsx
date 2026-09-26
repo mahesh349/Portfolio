@@ -1,143 +1,56 @@
-// import PropTypes from "prop-types";
-// import { Experience_Section } from "../constants/Contents";
-
-// function ExperienceSection( {isActive} ) {
-//   return (
-//     <div id="experience" className={`text-center px-4 pb-40 `}>
-//       <h1 className={`text-[#f10350] font-thin mb-20 mx-auto pt-4 pb-4 text-5xl sm:mx-10 md:mx-40 lg:mx-80 xl:mx-100 
-//                       ${isActive ? 'bg-linear-black' : 'bg-linear-white'}
-//                       ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'}  
-//                       rounded-[15px]`}>
-//         Work Experience
-//       </h1>
-//       <div className="space-y-10">
-//         {Experience_Section.map((items, itemIndex) => {
-//           const isEven = itemIndex % 2 === 0;
-//           return (
-//             <div key={itemIndex} className={`px-4 flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-6`}>
-//               <div className={`${isActive ? 'bg-linear-black' : 'bg-linear-white'} rounded-[15px] ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} p-6 w-full md:w-1/2`}>
-//                 <h2 className="text-[#f10350] font-semibold text-2xl">{items.CompanyName}</h2>
-//                 <p className={`${isActive ? 'text-white' : 'text-black'} text-sm mb-4 font-thin`}>{items.TimeLine}</p>
-//                 <div className={`${isActive ? 'text-white' : 'text-black'} mt-2 space-y-2 text-justify font-thin`}>
-//                   {Object.values(items.Description).map((sentence, index) => (
-//                     <p key={index}>
-//                       {sentence}
-//                     </p>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-
-// ExperienceSection.propTypes = {
-//   isActive: PropTypes.bool,
-// }
-
-
-// export default ExperienceSection;
-
-
-
-// import PropTypes from "prop-types";
-// import { Experience_Section } from "../constants/Contents";
-
-// function ExperienceSection({ isActive }) {
-//   return (
-//     <div id="experience" className="text-center px-4 pb-40">
-//       <h1 className={`text-[#f10350] font-thin mb-20 mx-auto pt-4 pb-4 text-5xl sm:mx-10 md:mx-40 lg:mx-80 xl:mx-100 
-//                       ${isActive ? 'bg-linear-black' : 'bg-linear-white'}
-//                       ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'}  
-//                       rounded-[15px]`}>
-//         Work Experience
-//       </h1>
-//       <div className="relative space-y-12">
-//         {/* Vertical line for the timeline */}
-//         <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-300"></div>
-
-//         {Experience_Section.map((items, itemIndex) => {
-//           const isLeft = itemIndex % 2 === 0;
-//           return (
-//             <div
-//               key={itemIndex}
-//               className={`relative flex ${isLeft ? "justify-end" : "justify-start"} items-center w-full`}
-//             >
-//               {/* Dot on the timeline */}
-//               <div className="absolute left-1/2 transform -translate-x-1/2 bg-[#f10350] w-4 h-4 rounded-full"></div>
-
-//               {/* Experience content with full-width effect on respective sides */}
-//               <div
-//                 className={`${isActive ? 'bg-linear-black' : 'bg-linear-white'} rounded-[15px] ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} 
-//                             p-6 w-full md:w-[calc(50%-2rem)] ${isLeft ? "text-left" : "text-right"} mx-4`}
-//               >
-//                 <h2 className="text-[#f10350] font-semibold text-2xl">{items.CompanyName}</h2>
-//                 <p className={`${isActive ? 'text-white' : 'text-black'} text-sm mb-4 font-thin`}>{items.TimeLine}</p>
-//                 <div className={`${isActive ? 'text-white' : 'text-black'} mt-2 space-y-2 text-justify font-thin`}>
-//                   {Object.values(items.Description).map((sentence, index) => (
-//                     <p key={index}>{sentence}</p>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-// ExperienceSection.propTypes = {
-//   isActive: PropTypes.bool,
-// };
-
-// export default ExperienceSection;
-
-
 import PropTypes from "prop-types";
 import { Experience_Section } from "../constants/Contents";
+import Reveal from "./NestedComponents/Reveal.jsx";
+import SectionHeading from "./NestedComponents/SectionHeading.jsx";
+import { cardClass } from "../constants/theme.js";
 
 function ExperienceSection({ isActive }) {
   return (
-    <div id="experience" className="text-center px-4 pb-40">
-      <h1 className={`text-[#f10350] font-thin mb-20 mx-auto pt-4 pb-4 text-5xl sm:mx-10 md:mx-40 lg:mx-80 xl:mx-100 
-                      ${isActive ? 'bg-linear-black' : 'bg-linear-white'}
-                      ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'}  
-                      rounded-[15px]`}>
-        Work Experience
-      </h1>
-      <div className="relative space-y-12">
+    <div id="experience" className="px-4 sm:px-10 pb-32">
+      <Reveal>
+        <SectionHeading eyebrow="03 · experience.log" title="Work Experience" isActive={isActive} />
+      </Reveal>
+      <div className="relative space-y-12 max-w-6xl mx-auto">
         {/* Vertical line for the timeline */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-300 hidden md:block"></div>
+        <div className={`absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 ${isActive ? 'border-white/10' : 'border-black/10'} hidden md:block`}></div>
 
         {Experience_Section.map((items, itemIndex) => {
           const isLeft = itemIndex % 2 === 0;
           return (
-            <div
-              key={itemIndex}
-              className={`relative flex flex-col md:flex-row ${isLeft ? "md:justify-end" : "md:justify-start"} items-center w-full`}
-            >
-              {/* Dot on the timeline */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 bg-[#f10350] w-4 h-4 rounded-full md:block"></div>
-
-              {/* Experience content */}
+            <Reveal key={items.CompanyName} delay={itemIndex * 80}>
               <div
-                className={`${isActive ? 'bg-linear-black' : 'bg-linear-white'} rounded-[15px] ${isActive ? 'shadow-[-2px_-2px_25px_rgba(255,255,255,0.2),6px_6px_25px_black]' : 'shadow-[5px_5px_15px_#D1D9E6,-5px_-5px_15px_#ffffff]'} 
-                            p-6 w-full md:w-[calc(50%-2rem)] ${isLeft ? "md:text-left" : "md:text-right"} mx-4`}
+                className={`relative flex flex-col md:flex-row ${isLeft ? "md:justify-end" : "md:justify-start"} items-center w-full`}
               >
-                <h2 className="text-[#f10350] font-semibold text-2xl">{items.CompanyName}</h2>
-                <p className={`${isActive ? 'text-white' : 'text-black'} text-sm mb-4 font-thin`}>{items.TimeLine}</p>
-                <div className={`${isActive ? 'text-white' : 'text-black'} mt-2 space-y-2 text-justify font-thin`}>
-                  {Object.values(items.Description).map((sentence, index) => (
-                    <p key={index}>{sentence}</p>
-                  ))}
+                {/* Dot on the timeline */}
+                {itemIndex === 0 && (
+                  <span className="absolute left-1/2 top-4 -translate-x-1/2 h-4 w-4 rounded-full bg-[#f10350] animate-ping hidden md:block"></span>
+                )}
+                <div className="absolute left-1/2 transform -translate-x-1/2 bg-[#f10350] w-4 h-4 rounded-full hidden md:block"></div>
+
+                {/* Experience content */}
+                <div className={cardClass(isActive, "rounded-xl p-6 md:p-8 w-full md:w-[calc(50%-2rem)] text-left mx-4")}>
+                  <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                    <h2 className="text-[#f10350] font-semibold text-2xl">{items.CompanyName}</h2>
+                    {itemIndex === 0 && (
+                      <span className="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded-full bg-[#f10350]/15 text-[#f10350]">
+                        Current
+                      </span>
+                    )}
+                  </div>
+                  <p className={`${isActive ? 'text-gray-300' : 'text-gray-600'} text-base font-medium`}>
+                    {items.Role}
+                  </p>
+                  <p className={`${isActive ? 'text-gray-400' : 'text-gray-500'} text-sm mb-4 font-mono`}>
+                    {items.Location} &middot; {items.TimeLine}
+                  </p>
+                  <ul className={`${isActive ? 'text-white' : 'text-black'} mt-2 space-y-2 text-left font-thin list-disc list-outside pl-5 marker:text-[#f10350]`}>
+                    {items.Bullets.map((sentence, index) => (
+                      <li key={index}>{sentence}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            </div>
+            </Reveal>
           );
         })}
       </div>

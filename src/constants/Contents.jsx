@@ -1,281 +1,269 @@
 // React Icons
-import { SiRedux,SiSpring,SiSpringboot,SiMysql,SiMongodb,SiExpress,SiJest,SiGraphql,SiFlask,SiPostgresql } from "react-icons/si";
-import { FaAws,FaGitAlt,FaGithub,FaDocker,FaJava,FaReact,FaNodeJs,FaLinkedin,FaPython } from "react-icons/fa"
+import {
+  SiRedux, SiSpring, SiSpringboot, SiSpringsecurity, SiMysql, SiMongodb, SiExpress,
+  SiJest, SiPostgresql, SiTypescript, SiKotlin, SiAmazon, SiAmazondynamodb,
+  SiAmazons3, SiAmazonsqs, SiAmazonecs, SiFirebase, SiJsonwebtokens, SiOpenid,
+  SiPostman, SiApachemaven, SiJunit5, SiScrumalliance, SiJira, SiAxios
+} from "react-icons/si";
+import {
+  FaAws, FaGitAlt, FaGithub, FaDocker, FaJava, FaReact, FaNodeJs, FaLinkedin,
+  FaPython, FaJenkins, FaHtml5, FaCss3Alt, FaFlask, FaEye, FaProjectDiagram,
+  FaDatabase, FaNetworkWired, FaUsers, FaSyncAlt, FaEnvelope, FaMapMarkerAlt
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { AiOutlineKubernetes } from "react-icons/ai";
-import { DiRedis, DiJqueryLogo,DiJenkins } from "react-icons/di";
+import { DiRedis } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { PiFileSql } from "react-icons/pi";
+import { TbRobot, TbApi, TbRoute } from "react-icons/tb";
+import { BsChatSquareText, BsDiagram3 } from "react-icons/bs";
+import { GiBrain } from "react-icons/gi";
+import { MdLock } from "react-icons/md";
 
 // React Images
 import MaheshPisharody2 from "../assets/MaheshPisharody2.jpg";
+import Migration from "../assets/ProjectImages/Migration.jpg";
 import InsightBlog from "../assets/ProjectImages/InsightBlog.jpg";
 import HealthCareAI from "../assets/ProjectImages/HealthCareAI.jpg";
-import SuitStay from "../assets/ProjectImages/SuitStay.jpg";
 import QuickRead from "../assets/ProjectImages/QuickRead.jpg";
 import DiebeticRetinopathy from "../assets/ProjectImages/DiebeticRetinopathy.jpg";
-import FlightDelay from "../assets/ProjectImages/FlightDelay.jpg";
 import FrontEnd from "../assets/AboutSVG/FrontEnd.png";
 import BackEnd from "../assets/AboutSVG/BackEnd.png";
 
 // Navbar Details
 export const NAVIGATION_LINKS = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" }
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" }
 ];
 
 // Home Page Details
 export const Home_Page = {
-    Name: 'Mahesh Pisharody',
-    info: 'Full Stack Developer with a Flair for Machine Learning',
-    photo: MaheshPisharody2,
-    link1: "https://github.com/mahesh349",
-    link2: "https://www.linkedin.com/in/mahesh-pisharody/",
-    Github_logo: <FaGithub />,
-    Linkedin_logo: <FaLinkedin />,
-    // ResumeLink: "https://drive.google.com/file/d/1qQW664-jaFzRdaQe9sHfEJtbW4efgyUb/view?usp=drive_link",
-    // MERN STACK RESUME BELOW
-    // ResumeLink: "https://drive.google.com/file/d/1LZujQooe299kGoh8lvWkd4qg8PkeCuuI/view?usp=drive_link",
-    // 4 Yrs JAVA RESUME BELOW
-    ResumeLink: "https://drive.google.com/file/d/1ecO5nKiercvQz_snKVAA2rlwfOVttmAE/view?usp=sharing",
+  Name: "Mahesh Pisharody",
+  info: "Software Development Engineer building full-stack platforms and LLM agent systems",
+  roles: ["Software Development Engineer", "Agentic AI Engineer", "Full-Stack Engineer"],
+  location: "Seattle, WA",
+  availability: "Open to new opportunities",
+  photo: MaheshPisharody2,
+  link1: "https://github.com/mahesh349",
+  link2: "https://www.linkedin.com/in/mahesh-pisharody/",
+  Github_logo: <FaGithub />,
+  Linkedin_logo: <FaLinkedin />,
+  ResumeLink: "/resume/Mahesh_Pisharody_Resume.docx",
+};
+
+// Contact Details
+export const Contact_Info = {
+  fullName: "Mahesh Prasad Pisharody",
+  phone: "+1 (551)-349-2626",
+  email: "maheshpisharody4@gmail.com",
+  location: "Seattle, WA",
+  Mail_logo: <FaEnvelope />,
+  Location_logo: <FaMapMarkerAlt />,
 };
 
 // About Me Details
 export const About = {
-    text0: "About Me",
-    // text1: "I Create Dynamic, Responsive Websites That Blend Creativity With Efficiency",
-    text1: "I’m a full-stack developer passionate about building intuitive and high-performing web applications.",
-    text2: "Hello! I'm Mahesh Pisharody, a full-stack developer with a flair for graphic design. I thrive on crafting web experiences that are not only visually stunning but also highly functional and user-friendly. My passion for detail ensures that every project is polished and professional. Beyond coding, I'm an avid explorer of new cultures and cuisines. My curiosity drives me to stay on the cutting edge of technology and design trends, bringing innovative and practical solutions to every challenge. Whether I'm developing a sleek website or diving into the latest tech, I am dedicated to delivering excellence in every project.",
-    BackImg: BackEnd,
-    FrontImg: FrontEnd,
+  text0: "About Me",
+  text1: "Software Development Engineer with 3 years of experience shipping full-stack platforms and, most recently, LLM agent systems on AWS.",
+  text2: "Hello! I'm Mahesh Pisharody, a Software Development Engineer currently building AI agent systems at Amazon Web Services — from Bedrock-backed conversational agents and retrieval optimization to multi-tenant encryption and fair-scheduling infrastructure. Before AWS, I built React and Spring Boot platforms at McKinsey & Company and Trigent Software. I hold a Master's in Computer Science from Stevens Institute of Technology, and I care about the same things end to end: clean API design, dependable data models, and interfaces people actually enjoy using. Outside of work, I'm an avid explorer of new cultures and cuisines, and I stay curious about wherever software engineering and AI are headed next.",
+  BackImg: BackEnd,
+  FrontImg: FrontEnd,
 };
 
-// Skills Section
+// Skills Section — grouped to match current resume categories
 export const Programming_Skills = [
-    {
-        icon: <FaJava />,
-        name: 'Java'
-    },
-    {
-        icon: <IoLogoJavascript />,
-        name: 'JavaScript'
-    },
-    {
-        icon: <FaPython />,
-        name: 'Python'
-    },
-    {
-        icon: <PiFileSql />,
-        name: 'SQL'
-    }
+  { icon: <FaJava />, name: "Java" },
+  { icon: <SiKotlin />, name: "Kotlin" },
+  { icon: <FaPython />, name: "Python" },
+  { icon: <IoLogoJavascript />, name: "JavaScript" },
+  { icon: <SiTypescript />, name: "TypeScript" },
+  { icon: <PiFileSql />, name: "SQL" },
+];
+
+export const AI_Agentic_Skills = [
+  { icon: <TbRobot />, name: "LLM Agents" },
+  { icon: <BsChatSquareText />, name: "Prompt Engineering" },
+  { icon: <SiAmazon />, name: "Amazon Bedrock" },
+  { icon: <GiBrain />, name: "Bedrock AgentCore" },
+  { icon: <BsDiagram3 />, name: "Strands Agents SDK" },
 ];
 
 export const Front_End_Skills = [
-    {
-        icon: <FaReact />,
-        name: 'React'
-    },
-    {
-        icon: <SiRedux />,
-        name: 'Redux'
-    },
-    {
-        icon: <SiJest />,
-        name: 'Jest'
-    },
-    {
-        icon: <SiGraphql />,
-        name: 'GraphQL'
-    },
-    {
-        icon: <DiJqueryLogo />,
-        name: 'JQuery'
-    },
-    {
-        icon: <RiTailwindCssFill />,
-        name: 'Tailwind CSS'
-    }
+  { icon: <FaReact />, name: "React.js" },
+  { icon: <SiRedux />, name: "Redux" },
+  { icon: <TbRoute />, name: "React Router" },
+  { icon: <SiAxios />, name: "Axios" },
+  { icon: <FaHtml5 />, name: "HTML" },
+  { icon: <FaCss3Alt />, name: "CSS" },
+  { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
 ];
 
-export const Back_End_Skills =[
-    {
-        icon: <FaNodeJs />,
-        name: 'Node.js'
-    },
-    {
-        icon: <SiExpress />,
-        name: 'Express'
-    },
-    {
-        icon: <SiSpringboot />,
-        name: 'Springboot'
-    },
-    {
-        icon: <SiSpring />,
-        name: 'Spring Framework'
-    },
-    {
-        icon: <SiFlask />,
-        name: 'Flask'
-    },
-    {
-        icon: <SiMongodb />,
-        name: 'MongoDB'
-    },
-    {
-        icon: <SiMysql />,
-        name: 'MySQL'
-    },
-    {
-        icon: <SiPostgresql />,
-        name: 'PostgreSQL'
-    }
+export const Back_End_Skills = [
+  { icon: <SiSpringboot />, name: "Spring Boot" },
+  { icon: <SiSpringsecurity />, name: "Spring Security" },
+  { icon: <SiSpring />, name: "Spring Data JPA" },
+  { icon: <FaDatabase />, name: "Hibernate" },
+  { icon: <TbApi />, name: "RESTful APIs" },
+  { icon: <SiOpenid />, name: "OAuth 2.0 / OIDC" },
+  { icon: <SiJsonwebtokens />, name: "JWT" },
+  { icon: <FaNetworkWired />, name: "Distributed Systems" },
+  { icon: <FaUsers />, name: "Multi-Tenant Architecture" },
+  { icon: <FaNodeJs />, name: "Node.js" },
+  { icon: <SiExpress />, name: "Express.js" },
+];
+
+export const Database_Skills = [
+  { icon: <SiPostgresql />, name: "PostgreSQL" },
+  { icon: <SiMysql />, name: "MySQL" },
+  { icon: <SiMongodb />, name: "MongoDB" },
+  { icon: <DiRedis />, name: "Redis" },
+  { icon: <SiFirebase />, name: "Firebase" },
+  { icon: <SiAmazondynamodb />, name: "AWS DynamoDB" },
 ];
 
 export const Devops_Skills = [
-    {
-        icon: <FaAws />,
-        name: 'AWS'
-    },
-    {
-        icon: <FaGitAlt />,
-        name: 'Git'
-    },
-    {
-        icon: <FaGithub />,
-        name: 'GitHub'
-    },
-    {
-        icon: <FaDocker />,
-        name: 'Docker'
-    },
-    {
-        icon: <AiOutlineKubernetes />,
-        name: 'Kubernetes'
-    },
-    {
-        icon: <DiRedis />,
-        name: 'Redis'
-    },
-    {
-        icon: <DiJenkins />,
-        name: 'Jenkins'
-    }
+  { icon: <FaAws />, name: "AWS Lambda" },
+  { icon: <SiAmazons3 />, name: "Amazon S3" },
+  { icon: <SiAmazonsqs />, name: "Amazon SQS" },
+  { icon: <MdLock />, name: "AWS KMS" },
+  { icon: <FaEye />, name: "AWS CloudTrail" },
+  { icon: <FaProjectDiagram />, name: "Step Functions" },
+  { icon: <SiAmazonecs />, name: "ECS Fargate" },
+  { icon: <FaDocker />, name: "Docker" },
+  { icon: <FaJenkins />, name: "Jenkins" },
+];
+
+export const Testing_Tools_Skills = [
+  { icon: <SiJunit5 />, name: "JUnit" },
+  { icon: <FaFlask />, name: "Mockito" },
+  { icon: <SiJest />, name: "Jest" },
+  { icon: <SiPostman />, name: "Postman" },
+  { icon: <FaGitAlt />, name: "Git" },
+  { icon: <FaGithub />, name: "GitHub" },
+  { icon: <SiApachemaven />, name: "Maven" },
+];
+
+export const Methodology_Skills = [
+  { icon: <SiScrumalliance />, name: "Agile (Scrum)" },
+  { icon: <FaSyncAlt />, name: "SDLC" },
+  { icon: <SiJira />, name: "Jira" },
+];
+
+export const Skills_Categories = [
+  { title: "Programming Languages", items: Programming_Skills },
+  { title: "AI & Agentic Systems", items: AI_Agentic_Skills },
+  { title: "Front-End", items: Front_End_Skills },
+  { title: "Back-End", items: Back_End_Skills },
+  { title: "Databases", items: Database_Skills },
+  { title: "Cloud & DevOps", items: Devops_Skills },
+  { title: "Testing & Tools", items: Testing_Tools_Skills },
+  { title: "Methodologies", items: Methodology_Skills },
 ];
 
 // Job Experience Section
 export const Experience_Section = [
-    {
-        CompanyName: 'McKinsey & Company', //'McKinsey & Company'
-        TimeLine: 'Jul 2024 - Present',
-        Description: {
-            Sentence1: 'Designed over 15 interactive web interfaces using React.js, ensuring smooth accessibility and engagement across multiple devices and screen sizes.',
-            Sentence2: 'Enhanced state management with Redux, eliminating redundant renders and maximizing application efficiency for better resource allocation.',
-            Sentence3: 'Developed seamless integration between frontend components and backend APIs, dynamically displaying data from 20+ endpoints while implementing caching mechanisms.',
-            Sentence4: 'Introduced pagination, infinite scrolling, and real-time filtering, enriching user interactions and creating a more intuitive interface.',
-            Sentence5: 'Strengthened code reliability by crafting comprehensive unit tests with Jest and React Testing Library, mitigating regression issues.',
-            Sentence6: 'Minimized API latency by 30%, refining data-fetching approaches and optimizing state transitions for quicker responses.',
-            Sentence7: 'Elevated content rendering strategies, contributing to a 20% boost in user engagement across enterprise platforms.'
-        }
-    },
-    {
-        CompanyName: 'KPMG India', //KPMG India
-        TimeLine: 'Aug 2021 - Jul 2022',
-        Description: {
-            Sentence1: 'Developed financial applications using React.js and JavaScript, ensuring compliance with industry standards and seamless compatibility across browsers.',
-            Sentence2: 'Built RESTful APIs using Java & Spring Framework, optimizing backend communication pipelines and decreasing data retrieval times by 30% through structured queries.',
-            Sentence3: 'Architected secure MySQL databases, incorporating AWS RDS for managed storage solutions and AWS Lambda for cost-efficient serverless execution.',
-            Sentence4: 'Applied advanced authentication protocols with OAuth and JWT, reinforcing access control and preventing unauthorized data exposure.',
-            Sentence5: 'Conducted rigorous unit and integration testing with Jasmine and Mocha, leveraging Webpack and GitHub for structured code management.',
-            Sentence6: 'Revamped database queries to enhance transaction speed, increasing backend efficiency by 25% for large-scale data processing.',
-            Sentence7: 'Streamlined architectural design, boosting reliability and ensuring adherence to financial security policies.'
-        }
-    },
-    {
-        CompanyName: 'Trigent Software Inc', //Trigent Software Inc
-        TimeLine: 'Jul 2020 - Jun 2021',
-        Description: {
-            Sentence1: 'Created modular, scalable web applications using React.js, developing reusable UI components and ensuring effortless navigation with React Router.',
-            Sentence2: 'Engineered RESTful APIs using Node.js and Express.js, handling asynchronous requests efficiently for 10,000+ monthly transactions.',
-            Sentence3: 'Optimized MongoDB schema structures, streamlining data retrieval processes and ensuring smooth interactions within the system.',
-            Sentence4: 'Secured external API integrations, successfully incorporating 5+ third-party services and authenticating over 100,000+ users via JWT.',
-            Sentence5: 'Participated in Agile development workflows, engaging in iterative sprints and adapting to evolving feature requirements.',
-            Sentence6: 'Strengthened application stability through meticulous unit testing using Jest and Mocha, proactively addressing potential bottlenecks.',
-            Sentence7: 'Enhanced user experience by refining interface aesthetics and accelerating API responses, increasing user retention by 30%.'
-        }
-    }
-    // FOR GOLDMAN SACHS BELOW
-    // {
-    //     CompanyName: 'MultiBrand Computers', //Multibrand Computers
-    //     TimeLine: 'Jan 2019 - Dec 2019',
-    //     Description: {
-    //         Sentence1: 'Develop a dynamic API system to process events, increasing operational efficiency by 30%. Designed and developed applications using Springboot, Hibernate, and SQL databases with minimal manual configuration.',
-    //         Sentence2: 'Worked on Distributed Systems which handled large transactions and helped maintain the overall application.',
-    //         Sentence3: 'Collaborated seamlessly with diverse teams, offering adept support and resolving incidents promptly, elevating operational efficiency by 30%, adhering to Agile methodology. Played a pivotal role in product support, ensuring smooth operations and enhancing organizational efficiency.',
-    //     }
-    // }
+  {
+    CompanyName: "Amazon Web Services (AWS)",
+    Role: "Software Development Engineer",
+    Location: "Seattle, WA",
+    TimeLine: "Sep 2025 – Present",
+    Bullets: [
+      "Refined prompts and tool gating for an Amazon Bedrock supply-chain recommendation agent, turning vague forecast analyses into specific, actionable forecast overrides; validated changes with end-to-end scenarios and LLM-as-judge evaluations.",
+      "Diagnosed repeated knowledge-base calls in a contract question-answering agent and redesigned retrieval-tool guidance to switch data sources on failed searches, turning a reported wrong answer in 61 seconds into a correct answer in 20 seconds.",
+      "Traced an agent-framework control instruction through memory persistence and chat replay, then filtered internal messages from both write and read paths — the issue had affected 362 of 2,301 analyzed chat sessions.",
+      "Designed and shipped customer-managed-key encryption across recommendation storage, agent workflows, and conversational-agent responses, with per-tenant key selection and integration tests validating encrypted data at rest.",
+      "Implemented event routing, DynamoDB write semantics, and tenant-priority configuration for a fair scheduling system that dispatches multi-tenant recommendation workflows to Amazon Bedrock.",
+      "Built a shared AWS AppConfig platform for tenant-scoped agent features and prompts, with gradual rollout, CloudWatch monitoring, and automatic rollback across multiple AWS regions.",
+    ],
+  },
+  {
+    CompanyName: "McKinsey & Company",
+    Role: "Software Engineer",
+    Location: "Jersey City, NJ",
+    TimeLine: "Jul 2024 – Aug 2025",
+    Bullets: [
+      "Delivered 15+ React interfaces for a client-engagement platform, including dashboards, approval queues, and reporting views, with reusable components adopted across the application.",
+      "Structured 20+ RESTful Java and Spring Boot endpoints with layered controllers, services, and DTOs, enforcing validation and centralized exception handling.",
+      "Resolved a slow dashboard endpoint by replacing repeated per-engagement queries with a targeted projection and Redis caching, cutting p95 response time by about 30%.",
+      "Standardized a deliverable-approval workflow across React and Spring Boot, enforcing role-based authorization on both the client and server and recording every status change to an audit-history table.",
+      "Created a reusable React component library spanning tables, filters, status badges, confirmation dialogs, and pagination controls, adopted consistently across 15+ interfaces.",
+      "Introduced server-side pagination, row virtualization, and debounced cancellable search requests, eliminating redundant backend calls and stale-response overwrites on the engagement search screen.",
+    ],
+  },
+  {
+    CompanyName: "Trigent Software",
+    Role: "Java Developer",
+    Location: "India",
+    TimeLine: "Jul 2020 – Jun 2021",
+    Bullets: [
+      "Developed responsive web application features using React.js and Redux, building reusable components, role-aware navigation, validated forms, and dashboard views for an enterprise onboarding platform.",
+      "Designed and implemented 10+ RESTful API endpoints using Java, Spring Boot, and Spring Data JPA, supporting onboarding creation, updates, task completion, approval workflows, filtering, pagination, and audit-history retrieval.",
+      "Developed and optimized MySQL database structures, JPA entity relationships, queries, constraints, and indexes to support reliable storage and efficient retrieval of user, onboarding, checklist, and approval information.",
+      "Integrated OAuth 2.0/OpenID Connect authentication and JWT-based stateless authorization using Spring Security, enforcing role-based access across protected UI functionality and backend endpoints for 100+ application users.",
+      "Collaborated with frontend developers, QA engineers, business analysts, and the technical lead to define API contracts, resolve integration issues, support user-acceptance testing, and deliver production-ready features through Git- and Jenkins-based CI/CD workflows.",
+    ],
+  },
+];
+
+// Education Section
+export const Education_Section = [
+  {
+    School: "Stevens Institute of Technology",
+    Location: "Hoboken, NJ",
+    Degree: "Master of Science in Computer Science",
+    TimeLine: "Aug 2022 – May 2024",
+    Details:
+      "Coursework: Deep Learning, Machine Learning Fundamentals & Applications, Web Mining, Web Programming, Knowledge Discovery and Data Mining, Introduction to R, Data Structures and Algorithms, Agile Methods for Software Development, Financial Lab: Database Design.",
+  },
+  {
+    School: "University of Pune",
+    Location: "Pune, India",
+    Degree: "Bachelor of Computer Application",
+    TimeLine: "Jun 2018 – May 2021",
+    Details: "",
+  },
 ];
 
 // Project Section
 export const Project_Sections = [
-    {
-        Name: 'InsightBlog',
-        Image: InsightBlog,
-        About: "Built a user-centric blogging platform using JavaScript, MongoDB, Express.js, Node.js, and React.js, allowing users to create accounts, manage posts with articles, images, and videos. Integrated machine learning for content recommendations, comment sentiment analysis, spam detection, and article summarization. Secured platform with JWT authentication and bcrypt for safe user login and data protection.",
-        Tech: ['React','Express.js','MongoDB','Firebase','Redux','Machine Learning Algorithms','Data Analysis','Flask','Python']
-    },
-    {
-        Name: 'LifeGuardAI',
-        Image: HealthCareAI,
-        About: "Designed and implemented a machine learning-driven healthcare analytics framework in Python, achieving 80% accuracy in heart attack risk prediction. Leveraged Flask for API deployment and integrated a user-friendly interface with React and Node.js, enabling real-time data management and personalized insights for over 10,000 users, significantly enhancing patient-provider interactions.",
-        Tech: ['React','Express.js','MongoDB','Firebase','Redux','Machine Learning Algortihms','Data Analysis','Flask','Python']
-    },
-    {
-        Name: 'SuitStay',
-        Image: SuitStay,
-        About: "Led a team of 4 to develop a hotel management system with Node.js, MongoDB, and Express.js, reducing processing time by 50% and enhancing efficiency. Integrated Firebase and Handlebars, boosting data retrieval by 40% and improving user navigation by 30%. Implemented bcrypt for password hashing and middleware for security, achieving a robust, breach-free system.",
-        Tech: ['Node.js','Express.js','MongoDB','Firebase','Redux','Handlebars','Password Hashing']
-    },
-    {
-        Name: 'Quick Read',
-        Image: QuickRead,
-        About: "Used Python’s Beautiful Soup and Requests to scrape and analyze data from techcrunch.com, increasing audience engagement by 20%. Improved text analysis accuracy by 25% and reduced processing time by 40% through advanced preprocessing techniques like tokenization and lemmatization. Evaluated TF-IDF, LSA, and Textrank algorithms, finding LSA improved F1 scores by 20% and BLEU coherence by 30%.",
-        Tech: ['React','Express.js','MongoDB','Natural Language Processing(NLP)','Machine Learning Algorithms','Redux']
-    },
-    {
-        Name: 'Diebetic Retinopathy Detection Using Deep Learning',
-        Image: DiebeticRetinopathy,
-        About: "Developed a diabetic retinopathy detection application using deep learning with Inception v3, capable of classifying severity levels (No DR, Mild, Moderate, Severe, Proliferative) to aid in early diagnosis. Deployed on the web with Flask, the model provides robust and noise-compatible predictions, aiming to reduce blindness risk through early detection and accurate severity assessment.",
-        techSkills: [
-            "Deep Learning Algorithms",
-            "Computer Vision",
-            "Image Classification",
-            "Python",
-            "TensorFlow or PyTorch",
-            "Evaluation Metrics",
-            "Flask",
-            "Web Deployment",
-            "Machine Learning Model Evaluation",
-            "Medical Image Analysis"
-        ]
-    },
-    {
-        Name: 'Flight Delay Prediction',
-        Image: FlightDelay,
-        About: "Developed a machine learning model to predict flight delays using Python and scikit-learn, analyzing historical flight data, weather conditions, and airline schedules. Implemented data preprocessing, feature selection, and model evaluation techniques, achieving an accuracy of 85%. Deployed the model using Flask, enabling real-time predictions and assisting airlines in proactive scheduling, reducing delays by 15%.",
-        techSkills: [
-            "Machine Learning",
-            "Python",
-            "scikit-learn",
-            "Feature Selection",
-            "Model Evaluation",
-            "Data Analysis",
-            "Historical Data Analysis",
-            "Weather Data Analysis"
-        ]
-          
-    }
+  {
+    Name: "MigrationPilot",
+    Image: Migration,
+    About:
+      "An agentic software-modernization platform: one coordinator agent plus three specialist agents that analyze a Java repository, plan a framework upgrade (e.g. Java 11 → 21, Spring Boot 2 → 3, AWS SDK v1 → v2), and apply incremental patches — autonomously diagnosing and repairing compilation and test failures inside an isolated sandbox. AWS Step Functions manages durable workflow state with human-approval gates, an isolated Amazon ECS Fargate build sandbox runs the changes safely, and documentation-grounded planning keeps recommendations grounded in the official migration guides instead of relying on model memory.",
+    Tech: ["Kotlin", "Spring Boot", "Python", "LangGraph", "Amazon Bedrock", "AWS Step Functions", "ECS Fargate", "AWS CDK"],
+  },
+  {
+    Name: "LifeGuardAI",
+    Image: HealthCareAI,
+    GithubLink: "https://github.com/mahesh349/LifeGuardAI",
+    About:
+      "A full-stack cardiovascular-risk application: a Flask service serves an SVM classifier (selected after evaluating eight scikit-learn classifiers and a PyTorch neural network with cross-validation on roughly 67,000 patient records) that flags elevated risk above a 0.8 probability threshold. React doctor and patient dashboards run on Firebase Authentication, backed by Express and MongoDB REST APIs tested with Jest and Supertest.",
+    Tech: ["React", "Express.js", "MongoDB", "Firebase Auth", "Flask", "Python", "scikit-learn", "PyTorch"],
+  },
+  {
+    Name: "InsightBlog",
+    Image: InsightBlog,
+    About:
+      "A user-centric blogging platform built with JavaScript, MongoDB, Express.js, Node.js, and React.js, letting users create accounts and manage posts with articles, images, and videos. Integrated machine learning for content recommendations, comment sentiment analysis, spam detection, and article summarization, secured with JWT authentication and bcrypt password hashing.",
+    Tech: ["React", "Express.js", "MongoDB", "Redux", "Machine Learning", "Flask", "Python"],
+  },
+  {
+    Name: "Quick Read",
+    Image: QuickRead,
+    GithubLink: "https://github.com/mahesh349/QuickRead",
+    About:
+      "Used Python's Beautiful Soup and Requests to scrape and analyze articles from a news site, then compared TF-IDF, LSA, and TextRank summarization algorithms with tokenization and lemmatization preprocessing — LSA improved F1 scores and BLEU coherence over the other two approaches.",
+    Tech: ["Python", "Natural Language Processing", "React", "Express.js", "MongoDB"],
+  },
+  {
+    Name: "Diabetic Retinopathy Detection",
+    Image: DiebeticRetinopathy,
+    About:
+      "A deep-learning application using an Inception v3 model to classify diabetic retinopathy severity (No DR, Mild, Moderate, Severe, Proliferative) from retinal images, deployed on the web with Flask to support earlier screening and diagnosis.",
+    Tech: ["Deep Learning", "Computer Vision", "Python", "TensorFlow/PyTorch", "Flask"],
+  },
 ];

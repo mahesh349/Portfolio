@@ -3,6 +3,7 @@ import Landing from "./components/Landing.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import SkillsList from "./components/SkillsList.jsx";
 import ExperienceSection from "./components/ExperienceSection.jsx";
+import EducationSection from "./components/EducationSection.jsx";
 import ProjectSection from "./components/ProjectSection.jsx";
 import Contact from "./components/Contact.jsx";
 import { useState } from "react";
@@ -16,7 +17,7 @@ function App() {
   };
 
   const activeStyle = {
-    backgroundColor: isActive ? '#212529' : 'white',
+    backgroundColor: isActive ? '#16181d' : '#f4f6f8',
     transition: 'background-color 0.3s ease'
   };
 
@@ -27,6 +28,7 @@ function App() {
       <AboutMe isActive={isActive} />
       <SkillsList isActive={isActive} />
       <ExperienceSection isActive={isActive} />
+      <EducationSection isActive={isActive} />
       <ProjectSection isActive={isActive} />
       <Contact isActive={isActive} />
     </div>
