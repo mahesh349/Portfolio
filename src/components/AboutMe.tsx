@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
+import type { ThemeProps } from "../types";
 import { About } from "../constants/Contents";
-import SplitNew from "./NestedComponents/SplitDivAnimation.jsx";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
+import SplitNew from "./NestedComponents/SplitDivAnimation";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
 
-function AboutMe({ isActive }) {
+function AboutMe({ isActive }: ThemeProps) {
   return (
     <div className="relative z-10 pt-32 pb-32 px-4 sm:px-10" id="about">
       <Reveal>
@@ -23,10 +23,6 @@ function AboutMe({ isActive }) {
       <SplitNew isActive={isActive}/>
     </div>
   );
-}
-
-AboutMe.propTypes = {
-  isActive: PropTypes.bool,
 }
 
 export default AboutMe;

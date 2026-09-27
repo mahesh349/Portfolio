@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
-import { Home_Page } from "../constants/Contents.jsx";
+import type { ThemeProps } from "../types";
+import { Home_Page } from "../constants/Contents";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import RoleTypewriter from "./NestedComponents/RoleTypewriter.jsx";
-import TerminalPanel from "./NestedComponents/TerminalPanel.jsx";
+import RoleTypewriter from "./NestedComponents/RoleTypewriter";
+import TerminalPanel from "./NestedComponents/TerminalPanel";
 
-function Landing({ isActive }) {
+function Landing({ isActive }: ThemeProps) {
   return (
     <div
       id="hero"
@@ -94,9 +94,5 @@ function Landing({ isActive }) {
     </div>
   );
 }
-
-Landing.propTypes = {
-  isActive: PropTypes.bool,
-};
 
 export default Landing;

@@ -1,6 +1,13 @@
-import PropTypes from "prop-types";
+import type { ReactNode } from "react";
 
-function CodeWindow({ filename, className = "", bodyClassName = "", children }) {
+interface CodeWindowProps {
+  filename: string;
+  className?: string;
+  bodyClassName?: string;
+  children?: ReactNode;
+}
+
+function CodeWindow({ filename, className = "", bodyClassName = "", children }: CodeWindowProps) {
   return (
     <div className={`rounded-xl overflow-hidden border border-white/10 shadow-xl shadow-black/20 ${className}`}>
       <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1e2029] border-b border-white/5">
@@ -13,12 +20,5 @@ function CodeWindow({ filename, className = "", bodyClassName = "", children }) 
     </div>
   );
 }
-
-CodeWindow.propTypes = {
-  filename: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  bodyClassName: PropTypes.string,
-  children: PropTypes.node,
-};
 
 export default CodeWindow;

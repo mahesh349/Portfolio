@@ -1,8 +1,14 @@
-import PropTypes from "prop-types";
+import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 
-function Reveal({ children, className = "", delay = 0 }) {
-  const ref = useRef(null);
+interface RevealProps {
+  children?: ReactNode;
+  className?: string;
+  delay?: number;
+}
+
+function Reveal({ children, className = "", delay = 0 }: RevealProps) {
+  const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -35,11 +41,5 @@ function Reveal({ children, className = "", delay = 0 }) {
     </div>
   );
 }
-
-Reveal.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  delay: PropTypes.number,
-};
 
 export default Reveal;

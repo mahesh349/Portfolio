@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../types";
 import { Education_Section } from "../constants/Contents";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
-import { cardClass } from "../constants/theme.js";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
+import { cardClass } from "../constants/theme";
 import { FaGraduationCap } from "react-icons/fa";
 
-function EducationSection({ isActive }) {
+function EducationSection({ isActive }: ThemeProps) {
   return (
     <div id="education" className="px-4 sm:px-10 pb-32">
       <Reveal>
@@ -39,9 +39,5 @@ function EducationSection({ isActive }) {
     </div>
   );
 }
-
-EducationSection.propTypes = {
-  isActive: PropTypes.bool,
-};
 
 export default EducationSection;

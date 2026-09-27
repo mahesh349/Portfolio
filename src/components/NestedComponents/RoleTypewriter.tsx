@@ -1,14 +1,23 @@
-import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
-function RoleTypewriter({ roles, typingSpeed = 55, deletingSpeed = 28, pauseTime = 1600, className = "" }) {
+interface RoleTypewriterProps {
+  roles: string[];
+  typingSpeed?: number;
+  deletingSpeed?: number;
+  pauseTime?: number;
+  className?: string;
+}
+
+function RoleTypewriter({ roles, typingSpeed = 55, deletingSpeed = 28, pauseTime = 1600, className = "" }: RoleTypewriterProps) {
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
-  const [phase, setPhase] = useState("typing");
+  const [phase, setPhase] = useState<"typing" | "deleting">("typing");
 
   useEffect(() => {
     const current = roles[index % roles.length];
-    let timeout;
+    if (current === undefined) return;
+
+    let timeout: ReturnType<typeof setTimeout> | undefined;
 
     if (phase === "typing") {
       if (text.length < current.length) {
@@ -35,13 +44,5 @@ function RoleTypewriter({ roles, typingSpeed = 55, deletingSpeed = 28, pauseTime
     </span>
   );
 }
-
-RoleTypewriter.propTypes = {
-  roles: PropTypes.arrayOf(PropTypes.string).isRequired,
-  typingSpeed: PropTypes.number,
-  deletingSpeed: PropTypes.number,
-  pauseTime: PropTypes.number,
-  className: PropTypes.string,
-};
 
 export default RoleTypewriter;

@@ -1,11 +1,11 @@
-import NavBar from "./components/NavBar.jsx";
-import Landing from "./components/Landing.jsx";
-import AboutMe from "./components/AboutMe.jsx";
-import SkillsList from "./components/SkillsList.jsx";
-import ExperienceSection from "./components/ExperienceSection.jsx";
-import EducationSection from "./components/EducationSection.jsx";
-import ProjectSection from "./components/ProjectSection.jsx";
-import Contact from "./components/Contact.jsx";
+import NavBar from "./components/NavBar";
+import Landing from "./components/Landing";
+import AboutMe from "./components/AboutMe";
+import SkillsList from "./components/SkillsList";
+import ExperienceSection from "./components/ExperienceSection";
+import EducationSection from "./components/EducationSection";
+import ProjectSection from "./components/ProjectSection";
+import Contact from "./components/Contact";
 import { useState } from "react";
 import "../src/App.css";
 

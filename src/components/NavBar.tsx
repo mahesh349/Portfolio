@@ -1,18 +1,23 @@
-import PropTypes from 'prop-types';
+import type { MouseEvent } from 'react';
+import type { ThemeProps } from '../types';
 import { NAVIGATION_LINKS } from "../constants/Contents";
 import MaheshLogo2 from "../assets/MaheshLogo2.png";
 import MaheshLogo from "../assets/MaheshLogo.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 
-function NavBar({ toggleStyle, isActive }) {
+interface NavBarProps extends ThemeProps {
+    toggleStyle: () => void;
+}
+
+function NavBar({ toggleStyle, isActive }: NavBarProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
 
-    const handleLinkClick = (e, href) => {
+    const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const targetElement = document.querySelector(href);
         if (targetElement) {
@@ -102,11 +107,6 @@ function NavBar({ toggleStyle, isActive }) {
             </nav>
         </div>
     );
-}
-
-NavBar.propTypes = {
-    toggleStyle: PropTypes.func.isRequired,
-    isActive: PropTypes.bool.isRequired
 }
 
 export default NavBar;

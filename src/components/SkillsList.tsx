@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../types";
 import "../assets/Styles/Skills.css";
-import { Skills_Categories } from "../constants/Contents.jsx";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
-import { cardClass } from "../constants/theme.js";
+import { Skills_Categories } from "../constants/Contents";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
+import { cardClass } from "../constants/theme";
 
-function SkillsList({ isActive }) {
+function SkillsList({ isActive }: ThemeProps) {
   return (
     <div id="skills" className="px-4 sm:px-10 pb-32">
       <Reveal>
@@ -38,9 +38,5 @@ function SkillsList({ isActive }) {
     </div>
   );
 }
-
-SkillsList.propTypes = {
-  isActive: PropTypes.bool,
-};
 
 export default SkillsList;

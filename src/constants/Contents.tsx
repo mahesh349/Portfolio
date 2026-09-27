@@ -1,3 +1,8 @@
+import type {
+  NavigationLink, HomePage, ContactInfo, AboutContent, Skill,
+  SkillCategory, Experience, Education, Project,
+} from "../types";
+
 // React Icons
 import {
   SiRedux, SiSpring, SiSpringboot, SiSpringsecurity, SiMysql, SiMongodb, SiExpress,
@@ -30,7 +35,7 @@ import FrontEnd from "../assets/AboutSVG/FrontEnd.png";
 import BackEnd from "../assets/AboutSVG/BackEnd.png";
 
 // Navbar Details
-export const NAVIGATION_LINKS = [
+export const NAVIGATION_LINKS: NavigationLink[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
@@ -40,7 +45,7 @@ export const NAVIGATION_LINKS = [
 ];
 
 // Home Page Details
-export const Home_Page = {
+export const Home_Page: HomePage = {
   Name: "Mahesh Pisharody",
   info: "Software Development Engineer building full-stack platforms and LLM agent systems",
   roles: ["Software Development Engineer", "Agentic AI Engineer", "Full-Stack Engineer"],
@@ -55,7 +60,7 @@ export const Home_Page = {
 };
 
 // Contact Details
-export const Contact_Info = {
+export const Contact_Info: ContactInfo = {
   fullName: "Mahesh Prasad Pisharody",
   phone: "+1 (551)-349-2626",
   email: "maheshpisharody4@gmail.com",
@@ -65,7 +70,7 @@ export const Contact_Info = {
 };
 
 // About Me Details
-export const About = {
+export const About: AboutContent = {
   text0: "About Me",
   text1: "Software Development Engineer with 3 years of experience shipping full-stack platforms and, most recently, LLM agent systems on AWS.",
   text2: "Hello! I'm Mahesh Pisharody, a Software Development Engineer currently building AI agent systems at Amazon Web Services — from Bedrock-backed conversational agents and retrieval optimization to multi-tenant encryption and fair-scheduling infrastructure. Before AWS, I built React and Spring Boot platforms at McKinsey & Company and Trigent Software. I hold a Master's in Computer Science from Stevens Institute of Technology, and I care about the same things end to end: clean API design, dependable data models, and interfaces people actually enjoy using. Outside of work, I'm an avid explorer of new cultures and cuisines, and I stay curious about wherever software engineering and AI are headed next.",
@@ -74,7 +79,7 @@ export const About = {
 };
 
 // Skills Section — grouped to match current resume categories
-export const Programming_Skills = [
+export const Programming_Skills: Skill[] = [
   { icon: <FaJava />, name: "Java" },
   { icon: <SiKotlin />, name: "Kotlin" },
   { icon: <FaPython />, name: "Python" },
@@ -83,7 +88,7 @@ export const Programming_Skills = [
   { icon: <PiFileSql />, name: "SQL" },
 ];
 
-export const AI_Agentic_Skills = [
+export const AI_Agentic_Skills: Skill[] = [
   { icon: <TbRobot />, name: "LLM Agents" },
   { icon: <BsChatSquareText />, name: "Prompt Engineering" },
   { icon: <SiAmazon />, name: "Amazon Bedrock" },
@@ -91,7 +96,7 @@ export const AI_Agentic_Skills = [
   { icon: <BsDiagram3 />, name: "Strands Agents SDK" },
 ];
 
-export const Front_End_Skills = [
+export const Front_End_Skills: Skill[] = [
   { icon: <FaReact />, name: "React.js" },
   { icon: <SiRedux />, name: "Redux" },
   { icon: <TbRoute />, name: "React Router" },
@@ -101,7 +106,7 @@ export const Front_End_Skills = [
   { icon: <RiTailwindCssFill />, name: "Tailwind CSS" },
 ];
 
-export const Back_End_Skills = [
+export const Back_End_Skills: Skill[] = [
   { icon: <SiSpringboot />, name: "Spring Boot" },
   { icon: <SiSpringsecurity />, name: "Spring Security" },
   { icon: <SiSpring />, name: "Spring Data JPA" },
@@ -115,7 +120,7 @@ export const Back_End_Skills = [
   { icon: <SiExpress />, name: "Express.js" },
 ];
 
-export const Database_Skills = [
+export const Database_Skills: Skill[] = [
   { icon: <SiPostgresql />, name: "PostgreSQL" },
   { icon: <SiMysql />, name: "MySQL" },
   { icon: <SiMongodb />, name: "MongoDB" },
@@ -124,7 +129,7 @@ export const Database_Skills = [
   { icon: <SiAmazondynamodb />, name: "AWS DynamoDB" },
 ];
 
-export const Devops_Skills = [
+export const Devops_Skills: Skill[] = [
   { icon: <FaAws />, name: "AWS Lambda" },
   { icon: <SiAmazons3 />, name: "Amazon S3" },
   { icon: <SiAmazonsqs />, name: "Amazon SQS" },
@@ -136,7 +141,7 @@ export const Devops_Skills = [
   { icon: <FaJenkins />, name: "Jenkins" },
 ];
 
-export const Testing_Tools_Skills = [
+export const Testing_Tools_Skills: Skill[] = [
   { icon: <SiJunit5 />, name: "JUnit" },
   { icon: <FaFlask />, name: "Mockito" },
   { icon: <SiJest />, name: "Jest" },
@@ -146,13 +151,13 @@ export const Testing_Tools_Skills = [
   { icon: <SiApachemaven />, name: "Maven" },
 ];
 
-export const Methodology_Skills = [
+export const Methodology_Skills: Skill[] = [
   { icon: <SiScrumalliance />, name: "Agile (Scrum)" },
   { icon: <FaSyncAlt />, name: "SDLC" },
   { icon: <SiJira />, name: "Jira" },
 ];
 
-export const Skills_Categories = [
+export const Skills_Categories: SkillCategory[] = [
   { title: "Programming Languages", items: Programming_Skills },
   { title: "AI & Agentic Systems", items: AI_Agentic_Skills },
   { title: "Front-End", items: Front_End_Skills },
@@ -164,7 +169,7 @@ export const Skills_Categories = [
 ];
 
 // Job Experience Section
-export const Experience_Section = [
+export const Experience_Section: Experience[] = [
   {
     CompanyName: "Amazon Web Services (AWS)",
     Role: "Software Development Engineer",
@@ -209,7 +214,7 @@ export const Experience_Section = [
 ];
 
 // Education Section
-export const Education_Section = [
+export const Education_Section: Education[] = [
   {
     School: "Stevens Institute of Technology",
     Location: "Hoboken, NJ",
@@ -228,7 +233,7 @@ export const Education_Section = [
 ];
 
 // Project Section
-export const Project_Sections = [
+export const Project_Sections: Project[] = [
   {
     Name: "MigrationPilot",
     Image: Migration,

@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../types";
 import { Experience_Section } from "../constants/Contents";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
-import { cardClass } from "../constants/theme.js";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
+import { cardClass } from "../constants/theme";
 
-function ExperienceSection({ isActive }) {
+function ExperienceSection({ isActive }: ThemeProps) {
   return (
     <div id="experience" className="px-4 sm:px-10 pb-32">
       <Reveal>
@@ -57,9 +57,5 @@ function ExperienceSection({ isActive }) {
     </div>
   );
 }
-
-ExperienceSection.propTypes = {
-  isActive: PropTypes.bool,
-};
 
 export default ExperienceSection;

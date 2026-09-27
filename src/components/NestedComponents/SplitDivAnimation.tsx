@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../../types";
 import { About } from '../../constants/Contents';
-import CodeWindow from "./CodeWindow.jsx";
+import CodeWindow from "./CodeWindow";
 import "./Custom.css";
 
-const SplitNew = ({ isActive }) => {
+const SplitNew = ({ isActive }: ThemeProps) => {
   return (
     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 p-4">
       <CodeWindow
@@ -40,10 +40,6 @@ const SplitNew = ({ isActive }) => {
       </CodeWindow>
     </div>
   );
-};
-
-SplitNew.propTypes = {
-  isActive: PropTypes.bool,
 };
 
 export default SplitNew;

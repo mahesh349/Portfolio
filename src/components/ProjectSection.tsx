@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
-import { Project_Sections } from "../constants/Contents.jsx";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
-import CodeWindow from "./NestedComponents/CodeWindow.jsx";
-import { slugify } from "../constants/theme.js";
+import type { ThemeProps } from "../types";
+import { Project_Sections } from "../constants/Contents";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
+import CodeWindow from "./NestedComponents/CodeWindow";
+import { slugify } from "../constants/theme";
 import "../assets/Styles/Skills.css";
 import { FaGithub, FaFlask } from "react-icons/fa";
 
-function ProjectSection({ isActive }) {
+function ProjectSection({ isActive }: ThemeProps) {
   return (
     <div id="projects" className="px-4 sm:px-10 pb-32">
       <Reveal>
@@ -78,9 +78,5 @@ function ProjectSection({ isActive }) {
     </div>
   );
 }
-
-ProjectSection.propTypes = {
-  isActive: PropTypes.bool,
-};
 
 export default ProjectSection;

@@ -1,6 +1,11 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../../types";
 
-function SectionHeading({ eyebrow, title, isActive }) {
+interface SectionHeadingProps extends ThemeProps {
+  eyebrow: string;
+  title: string;
+}
+
+function SectionHeading({ eyebrow, title, isActive }: SectionHeadingProps) {
   return (
     <div className="mb-14 md:mb-16 max-w-6xl mx-auto">
       <p className={`font-mono text-sm ${isActive ? "text-gray-500" : "text-gray-400"}`}>
@@ -13,11 +18,5 @@ function SectionHeading({ eyebrow, title, isActive }) {
     </div>
   );
 }
-
-SectionHeading.propTypes = {
-  eyebrow: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  isActive: PropTypes.bool,
-};
 
 export default SectionHeading;

@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import type { ThemeProps } from "../types";
 import { NAVIGATION_LINKS, Home_Page, Contact_Info } from "../constants/Contents";
 import MaheshLogo from "../assets/MaheshLogo.png";
 import MaheshLogo2 from "../assets/MaheshLogo2.png";
-import Reveal from "./NestedComponents/Reveal.jsx";
-import SectionHeading from "./NestedComponents/SectionHeading.jsx";
+import Reveal from "./NestedComponents/Reveal";
+import SectionHeading from "./NestedComponents/SectionHeading";
 
-function Contact( {isActive} ) {
+function Contact({ isActive }: ThemeProps) {
   return (
     <div
       id="contact"
@@ -66,10 +66,6 @@ function Contact( {isActive} ) {
       </Reveal>
     </div>
   );
-}
-
-Contact.propTypes = {
-  isActive: PropTypes.bool,
 }
 
 export default Contact;
